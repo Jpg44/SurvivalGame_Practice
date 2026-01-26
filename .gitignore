@@ -1,0 +1,67 @@
+###############################################################################
+# Unity (Windows) - GitHub .gitignore
+# Place this file at the ROOT of the Unity project (same level as Assets/)
+###############################################################################
+
+# --- Unity generated folders (never commit) ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# --- Large captures / recordings ---
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# --- Visual Studio / Rider / IDE ---
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.opendb
+*.VC.db
+*.pdb
+*.mdb
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Unity crash / build artifacts ---
+sysinfo.txt
+*.stackdump
+
+# --- Build outputs (optional: keep builds out of git; use GitHub Releases instead) ---
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.dll
+
+# --- Addressables (generated binaries) ---
+[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+[Aa]ssets/[Ss]treamingAssets/aa/
+[Aa]ssets/[Ss]treamingAssets/aa.meta
+
+# --- If you use IL2CPP / Gradle caches ---
+.gradle/
+# (If you build Android, Unity may generate Gradle projects under Temp/ which is already ignored)
+
+###############################################################################
+# IMPORTANT: Do NOT ignore *.meta (Unity needs them for GUID consistency)
+###############################################################################
