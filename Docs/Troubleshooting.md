@@ -1,0 +1,12 @@
+## 2026-01-26 - Git add failed (Filename too long)
+- Symptom: git add . -> Filename too long under Library/PackageCache/...
+- 원인:
+  - .gitignore 적용 전/인덱스에 Library가 잡힘 + Windows path limitation
+- 시도:
+  - core.longpaths 설정
+  - git rm -r --cached Library
+  - .gitignore 위치(프로젝트 루트) 확인
+- 결론:
+  - core.longpaths true
+  - Library untracked + ignore 정상 적용
+  - Unity는 Library/Temp/Obj는 절대 추적하면 안 됨
