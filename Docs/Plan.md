@@ -1,7 +1,7 @@
 # Plan
 
 ## Week 1 Goal
-- 
+- 기초작업 실행
 
 ### Week 1 Tickets
 - [■] GitHub repo 생성 + 초기 커밋
