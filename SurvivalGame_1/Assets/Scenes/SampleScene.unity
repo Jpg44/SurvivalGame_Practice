@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 682879418}
   - component: {fileID: 682879417}
   - component: {fileID: 682879416}
+  - component: {fileID: 682879420}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -625,6 +626,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &682879420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682879415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1b4b8ea69cc524fb16939be7f660cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Setupkey
 --- !u!1 &831991547
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,8 +650,9 @@ GameObject:
   - component: {fileID: 831991552}
   - component: {fileID: 831991551}
   - component: {fileID: 831991550}
-  - component: {fileID: 831991549}
   - component: {fileID: 831991548}
+  - component: {fileID: 831991555}
+  - component: {fileID: 831991554}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -671,28 +685,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &831991549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831991547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d04bcf7a7fad34f89c89504690e2c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  moveSpeed: 6
-  acceleration: 18
-  deceleration: 22
-  cameraRelativeMovement: 1
-  faceMouse: 1
-  rotateSpeed: 20
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  cameraTransform: {fileID: 330585546}
 --- !u!136 &831991550
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -789,6 +781,33 @@ Transform:
   - {fileID: 425648813}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &831991554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831991547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1744f0959ffbab141ae2e7042c6ec135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  move: {fileID: 0}
+  moveSpeed: 6
+  dir: {x: 0, y: 0, z: 1}
+--- !u!114 &831991555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831991547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ab57919b6b41045a12f26670abecbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Move
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 #endif
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 6.0f;
