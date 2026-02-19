@@ -10,5 +10,9 @@ public class Setupkey : MonoBehaviour
     }
     void Update()
     {
+        if(Input.GetKey(KeyCode.W))
+        {
+            Debug.Log("w´­¸²");
+        }
     }
 }
