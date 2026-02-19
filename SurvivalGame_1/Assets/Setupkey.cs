@@ -1,18 +1,28 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class Setupkey : MonoBehaviour
 {
-    char[] a = { 'w', 'a', 's', 'd' };
+     enum MoveCommand
+    {
+        FORWARD, BACK, LEFT, RIGHT
+    };
+
     void Awake()
     {
-        Debug.Log("a:");
-        Debug.Log(a[0]);
+
     }
     void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        if (Keyboard.current.wKey.isPressed)
         {
             Debug.Log("w눌림");
+            KeyCode_W(MoveCommand.FORWARD);
         }
+    }
+    MoveCommand KeyCode_W(MoveCommand key)
+    {
+        Debug.Log(key);
+        Debug.Log(":눌림");
+        return key;
     }
 }

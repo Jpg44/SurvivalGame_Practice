@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public Move move;
     [SerializeField] public float moveSpeed = 6f;
     [SerializeField] public Vector3 dir=new Vector3(0,0,1);
+    [SerializeField] public Setupkey key;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
