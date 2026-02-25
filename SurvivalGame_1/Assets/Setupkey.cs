@@ -25,4 +25,22 @@ public class Setupkey : MonoBehaviour
         Debug.Log(":눌림");
         return key;
     }
+    MoveCommand KeyCode_A(MoveCommand key)
+    {
+        Debug.Log(key);
+        Debug.Log(":눌림");
+        return key;
+    }
+    MoveCommand KeyCode_S(MoveCommand key)
+    {
+        Debug.Log(key);
+        Debug.Log(":눌림");
+        return key;
+    }
+    MoveCommand KeyCode_D(MoveCommand key)
+    {
+        Debug.Log(key);
+        Debug.Log(":눌림");
+        return key;
+    }
 }
